@@ -1,0 +1,33 @@
+:root{
+    --purple: #bd93f9;
+    --purple-dark: #9875ca;
+    --dark: #383a59;
+}
+
+* {  
+    background-color: var(--dark) !important;
+    color: #f2f2f2;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: #1f1f1f;
+    background: var(--purple);
+}
+
+::selection {
+    color: #1f1f1f;
+    background: var(--purple);
+}
+
+.title {
+    color: var(--purple);
+}
+
+.btn-purple{
+    background: var(--purple) !important;
+}
+
+.btn-purple:hover{
+    background: var(--purple-dark) !important;
+}
