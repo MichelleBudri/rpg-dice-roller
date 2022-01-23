@@ -27,25 +27,38 @@
                         <p class="description">Select a type of dice: </p>
                     </div>
                     <div class="w-100"></div>
-                    <div class="col">
-                        <a name="d4Dice" id="d4Dice" class="btn btn-purple disabled" href="#" role="button" data-toggle="tooltip" data-placement="top" title="4 sided dice">
-                            D4
-                        </a>
-                        <a name="d6Dice" id="d6Dice" class="btn btn-purple disabled" href="#" role="button" data-toggle="tooltip" data-placement="top" title="6 sided dice">
-                            D6
-                        </a>
-                        <a name="d8Dice" id="d8Dice" class="btn btn-purple disabled" href="#" role="button" data-toggle="tooltip" data-placement="top" title="8 sided dice">
-                            D8
-                        </a>
-                        <a name="d10Dice" id="d10Dice" class="btn btn-purple disabled" href="#" role="button" data-toggle="tooltip" data-placement="top" title="10 sided dice">
-                            D10
-                        </a>
-                        <a name="d12Dice" id="d12Dice" class="btn btn-purple disabled" href="#" role="button" data-toggle="tooltip" data-placement="top" title="12 sided dice">
-                            D12
-                        </a>
-                        <a name="d20Dice" id="d20Dice" class="btn btn-purple disabled" href="#" role="button" data-toggle="tooltip" data-placement="top" title="20 sided dice">
-                            D20
-                        </a>
+                    <div class="col margin-bottom-15">
+                        <button type="button" name="d4Dice" id="d4Dice" class="btn btn-purple" data-toggle="tooltip" data-placement="top" title="4 sided dice" onclick="getRandom(1,5)">
+                            1D4
+                        </button>
+                        <button type="button" name="d6Dice" id="d6Dice" class="btn btn-purple" data-toggle="tooltip" data-placement="top" title="6 sided dice" onclick="getRandom(1,7)">
+                            1D6
+                        </button>
+                        <button type="button" name="d8Dice" id="d8Dice" class="btn btn-purple" data-toggle="tooltip" data-placement="top" title="8 sided dice" onclick="getRandom(1,9)">
+                            1D8
+                        </button>
+                        <button type="button" name="d10Dice" id="d10Dice" class="btn btn-purple" data-toggle="tooltip" data-placement="top" title="10 sided dice" onclick="getRandom(1,11)">
+                            1D10
+                        </button>
+                        <button type="button" name="d12Dice" id="d12Dice" class="btn btn-purple" data-toggle="tooltip" data-placement="top" title="12 sided dice" onclick="getRandom(1,13)">
+                            1D12
+                        </button>
+                        <button type="button" name="d20Dice" id="d20Dice" class="btn btn-purple" data-toggle="tooltip" data-placement="top" title="20 sided dice" onclick="getRandom(1,21)">
+                            1D20
+                        </button>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col description display-none">
+                        <div class="row">
+                            <div class="col">
+                                <p>Dice Type: </p>
+                                <h1 class="result diceType" id="diceType"></h1>
+                            </div>
+                            <div class="col">
+                                <p>Result: </p>
+                                <h1 class="result value" id="result"></h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
